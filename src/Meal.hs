@@ -42,9 +42,9 @@ cMinus nu c = calorie nu `nMinus'` c
 data NurietKind = Protein | Carbon | Fat deriving Eq
 calorieCal :: NurietKind -> NutrientQuantity -> NutrientQuantity
 calorieCal _ Nothing = Nothing
-calorieCal Protein (Just n) = Just ( 4 * n )
-calorieCal Carbon (Just n) = Just ( 4 * n )
-calorieCal Fat (Just n) = Just ( 9 * n )
+calorieCal Protein jn = fmap (4*) jn
+calorieCal Carbon  jn = fmap (4*) jn
+calorieCal Fat     jn = fmap (9*) jn
 
 defaultNutrient :: Nutrient
 defaultNutrient = Nutrient{calorie = Nothing, protein = Nothing, fat = Nothing, carbon = Nothing}
