@@ -1,3 +1,4 @@
 module Data.Calorie (Calorie) where
+import Data.BaseUnit
 
-type Calorie = Maybe Float
+type Calorie = BaseUnit

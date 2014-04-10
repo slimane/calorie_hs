@@ -13,8 +13,9 @@ module Meal (
 import Data.Monoid()
 import Control.Applicative
 import Data.Calorie
+import Data.BaseUnit
 
-type NutrientQuantity = Maybe Float
+type NutrientQuantity = BaseUnit
 data Nutrient = Nutrient{calorie :: Calorie
                         , protein :: NutrientQuantity
                         , fat :: NutrientQuantity
@@ -24,11 +25,9 @@ data Nutrient = Nutrient{calorie :: Calorie
 nAdd :: Nutrient -> Nutrient -> Nutrient
 a `nAdd` b = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
     where
-        nAdd' :: NutrientQuantity -> NutrientQuantity -> NutrientQuantity
+        nAdd' :: BaseUnit -> BaseUnit -> BaseUnit
         m1 `nAdd'` m2 = (+) <$> m1 <*> m2
-        nAdd'' :: Calorie -> Calorie -> Calorie
-        nAdd'' = nAdd'
-        cal = calorie a `nAdd''` calorie b
+        cal = calorie a `nAdd'` calorie b
         p = protein a `nAdd'` protein b
         f = fat a `nAdd'` fat b
         c = carbon a `nAdd'` carbon b
@@ -40,7 +39,7 @@ cMinus nu c = calorie nu `nMinus'` c
 
 
 data NurietKind = Protein | Carbon | Fat deriving Eq
-calorieCal :: NurietKind -> NutrientQuantity -> NutrientQuantity
+calorieCal :: NurietKind -> NutrientQuantity -> Calorie
 calorieCal _ Nothing = Nothing
 calorieCal Protein jn = fmap (4*) jn
 calorieCal Carbon  jn = fmap (4*) jn

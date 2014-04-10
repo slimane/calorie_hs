@@ -20,3 +20,6 @@ main = do
   putStrLn . ("Fat is " ++) . show . calorieCal Fat $ fat total
   putStrLn . show $ lossCalorie Run 65 14
   putStrLn . show $ total `cMinus` lossCalorie Run 65 14
+--day2
+  let breakFirst = defaultNutrient {calorie = Just 225, protein = Just 5.3, fat = Just 3.9, carbon = Just 41.9}
+  putStrLn . show $ breakFirst

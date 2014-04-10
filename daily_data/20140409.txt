@@ -1,0 +1,2 @@
+Nutrient {calorie = Just 1116.4, protein = Just 89.2, fat = Just 25.008, carbon = Just 130.075}
+workout : Just 910.0
