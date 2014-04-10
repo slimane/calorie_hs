@@ -2,6 +2,7 @@ module Main where
 
 import Meal
 import Workout
+import Util.Util
 --import Data.Time
 --import Data.Time.Lens
 
@@ -9,17 +10,10 @@ import Workout
 
 main :: IO ()
 main = do
-  let breakFirst = defaultNutrient {calorie = Just 334, protein = Just 7.5, fat = Just 5.4, carbon = Just 63.4}
-  let lunch = defaultNutrient {calorie = Just 308, protein = Just 44.1, fat = Just 2.4, carbon = Just 26.9}
-  let dinner1 = defaultNutrient {calorie = Just 298, protein = Just 4.6, fat = Just 15.0 , carbon = Just 36.1}
-  let dinner2 = defaultNutrient {calorie = Just 176.4, protein = Just 33, fat = Just 2.208, carbon = Just 3.675}
-  let total = foldl1 nAdd [ breakFirst, lunch, dinner1, dinner2 ]
-  putStrLn . show $ total
-  putStrLn . ("protein is " ++) . show . calorieCal Protein $ protein total
-  putStrLn . ("carbon is " ++) . show . calorieCal Carbon $ carbon total
-  putStrLn . ("Fat is " ++) . show . calorieCal Fat $ fat total
-  putStrLn . show $ lossCalorie Run 65 14
-  putStrLn . show $ total `cMinus` lossCalorie Run 65 14
---day2
-  let breakFirst = defaultNutrient {calorie = Just 225, protein = Just 5.3, fat = Just 3.9, carbon = Just 41.9}
-  putStrLn . show $ breakFirst
+    let breakFirst = defaultNutrient {calorie = Just 225, protein = Just 5.3, fat = Just 3.9, carbon = Just 41.9}
+    let lunch1 = defaultNutrient {calorie = Just 319, protein = Just 4.9, fat = Just 7.9, carbon = Just 57.4}
+    let lunch2 = defaultNutrient {calorie = Just (107 * 2), protein = Just (14.4 * 2), fat = Just (4.8 * 2), carbon = Just (1.48 * 2)}
+    let dinner = defaultNutrient {calorie = Just 363, protein = Just 16.3, fat = Just 5.8, carbon = Just 59.1}
+    let total = show $ foldl1 nAdd [breakFirst, lunch1, lunch2, dinner]
+    writeFile "c:/HOME/learning_haskell/calorie/daily_data/20140410.txt" total
+    putStrLn . show $ (applyBothSide (+) $ (*24) . length ) "1234567" "89"
