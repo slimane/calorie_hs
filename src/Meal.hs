@@ -7,6 +7,7 @@ module Meal (
             , defaultMeal
             , calorieCal
             , nAdd
+            , nMal
             , cMinus
             ) where
 
@@ -31,6 +32,16 @@ a `nAdd` b = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
         p = protein a `nAdd'` protein b
         f = fat a `nAdd'` fat b
         c = carbon a `nAdd'` carbon b
+
+nMal :: Nutrient -> Float -> Nutrient
+n `nMal` a = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
+    where
+        nMal' :: BaseUnit -> Float -> BaseUnit
+        n' `nMal'` a' = fmap (a' *) n'
+        cal = calorie n `nMal'` a
+        p = protein n `nMal'` a
+        f = fat n `nMal'` a
+        c = carbon n `nMal'` a
 
 cMinus :: Nutrient -> Calorie -> Calorie
 cMinus nu c = calorie nu `nMinus'` c
