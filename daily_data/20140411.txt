@@ -1,0 +1,1 @@
+Nutrient {calorie = Just 1009.0, protein = Just 42.8, fat = Just 17.900002, carbon = Just 171.5}
