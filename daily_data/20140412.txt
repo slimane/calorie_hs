@@ -1,0 +1,7 @@
+Nutrient {calorie = Just 3451.2, protein = Nothing, fat = Nothing, carbon = Nothing}
+Nutrient {calorie = Just 283.0, protein = Just 3.6, fat = Just 15.0, carbon = Just 33.4}
+Nutrient {calorie = Just 239.0, protein = Just 5.1, fat = Just 13.4, carbon = Just 23.4}
+Nutrient {calorie = Just 825.12, protein = Just 61.540203, fat = Just 59.8212, carbon = Just 0.3438}
+Nutrient {calorie = Just 550.08, protein = Just 41.026802, fat = Just 39.8808, carbon = Just 0.2292}
+Nutrient {calorie = Just 1328.0, protein = Nothing, fat = Nothing, carbon = Nothing}
+Nutrient {calorie = Just 226.0, protein = Nothing, fat = Nothing, carbon = Nothing}

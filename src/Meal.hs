@@ -8,6 +8,7 @@ module Meal (
             , calorieCal
             , nAdd
             , nMal
+            , nDiv
             , cMinus
             ) where
 
@@ -33,15 +34,18 @@ a `nAdd` b = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
         f = fat a `nAdd'` fat b
         c = carbon a `nAdd'` carbon b
 
-nMal :: Nutrient -> Float -> Nutrient
+nMal :: Nutrient -> Double -> Nutrient
 n `nMal` a = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
     where
-        nMal' :: BaseUnit -> Float -> BaseUnit
+        nMal' :: BaseUnit -> Double -> BaseUnit
         n' `nMal'` a' = fmap (a' *) n'
         cal = calorie n `nMal'` a
         p = protein n `nMal'` a
         f = fat n `nMal'` a
         c = carbon n `nMal'` a
+
+nDiv :: Nutrient -> Double -> Nutrient
+n `nDiv` a = n `nMal` (1 / a)
 
 cMinus :: Nutrient -> Calorie -> Calorie
 cMinus nu c = calorie nu `nMinus'` c
@@ -51,15 +55,14 @@ cMinus nu c = calorie nu `nMinus'` c
 
 data NurietKind = Protein | Carbon | Fat deriving Eq
 calorieCal :: NurietKind -> NutrientQuantity -> Calorie
-calorieCal _ Nothing = Nothing
-calorieCal Protein jn = fmap (4*) jn
-calorieCal Carbon  jn = fmap (4*) jn
-calorieCal Fat     jn = fmap (9*) jn
+calorieCal Protein = fmap (4*)
+calorieCal Carbon  = fmap (4*)
+calorieCal Fat     = fmap (9*)
 
 defaultNutrient :: Nutrient
 defaultNutrient = Nutrient{calorie = Nothing, protein = Nothing, fat = Nothing, carbon = Nothing}
 
-data Meal = Meal{name :: String, nutrient :: Maybe Nutrient, date :: String} deriving(Show, Eq, Read, Ord)
+data Meal = Meal{name :: String, nutrient :: Nutrient, date :: String} deriving(Show, Eq, Read, Ord)
 defaultMeal :: Meal
-defaultMeal = Meal{name = "",  nutrient = Nothing, date = ""}
+defaultMeal = Meal{name = "",  nutrient = defaultNutrient, date = ""}
 

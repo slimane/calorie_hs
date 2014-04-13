@@ -1,2 +1,2 @@
 module Data.BaseUnit(BaseUnit) where
-type BaseUnit = Maybe Float
+type BaseUnit = Maybe Double
