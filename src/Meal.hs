@@ -3,6 +3,8 @@ module Meal (
             , NurietKind(..)
             , Meal(..)
             , NutrientQuantity
+            , insertMeal
+            , insertNutrient
             , defaultNutrient
             , defaultMeal
             , calorieCal
@@ -16,6 +18,8 @@ import Data.Monoid()
 import Control.Applicative
 import Data.Calorie
 import Data.BaseUnit
+import Control.Exception as E
+import qualified Data.Time as T
 
 type NutrientQuantity = BaseUnit
 data Nutrient = Nutrient{calorie :: Calorie
@@ -62,7 +66,44 @@ calorieCal Fat     = fmap (9*)
 defaultNutrient :: Nutrient
 defaultNutrient = Nutrient{calorie = Nothing, protein = Nothing, fat = Nothing, carbon = Nothing}
 
-data Meal = Meal{name :: String, nutrient :: Nutrient, date :: String} deriving(Show, Eq, Read, Ord)
-defaultMeal :: Meal
-defaultMeal = Meal{name = "",  nutrient = defaultNutrient, date = ""}
+insertNutrient :: IO Nutrient
+insertNutrient = do
+        c1 <- prompt "calorie"  :: IO (Maybe Double)
+        p <- prompt "protein"   :: IO (Maybe Double)
+        f <- prompt "fat"       :: IO (Maybe Double)
+        c2 <- prompt "carbon"   :: IO (Maybe Double)
+        return defaultNutrient{calorie = c1, protein = p, fat = f, carbon = c2}
+    where
+        prompt s = do
+                    putStrLn $ s ++ " is?"
+                    n <- getLine
+                    if n == ""
+                        then return $ Nothing
+                        else return $ Just (read n)
 
+
+data Meal = Meal{name :: Maybe String, nutrient :: Nutrient, date :: Maybe T.ZonedTime} deriving(Show, Read, Eq, Ord)
+
+instance Eq T.ZonedTime where
+    x == y = T.zonedTimeToUTC x == T.zonedTimeToUTC y
+
+instance Ord T.ZonedTime where
+    x `compare` y = T.zonedTimeToUTC x `compare` T.zonedTimeToUTC y
+
+
+
+
+defaultMeal :: Meal
+defaultMeal = Meal{name = Nothing, nutrient = defaultNutrient, date = Nothing}
+
+insertMeal :: IO Meal
+insertMeal = do
+        n <- prompt "name" :: IO (Maybe String)
+        nu <- insertNutrient
+        d <- T.getZonedTime
+        return defaultMeal{name = n, nutrient = nu, date = Just d}
+    where
+        prompt s = do
+                    putStrLn $ s ++ " is?"
+                    n <- getLine
+                    return $ Just n

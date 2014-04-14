@@ -1,0 +1,2 @@
+Meal {name = Just "hakodate kogane", nutrient = Nutrient {calorie = Just 308.0, protein = Just 44.1, fat = Just 2.7, carbon = Just 26.9}, date = Just 2014-04-14 18:05:17.4895959 “Œ‹ (•W€)}
+ 
