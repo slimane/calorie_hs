@@ -1,2 +1,4 @@
 Meal {name = Just "hakodate kogane", nutrient = Nutrient {calorie = Just 308.0, protein = Just 44.1, fat = Just 2.7, carbon = Just 26.9}, date = Just 2014-04-14 18:05:17.4895959 “Œ‹ (•W€)}
+ Meal {name = Just "\150\236\141\216\131X\129[\131v", nutrient = Nutrient {calorie = Just 200.0, protein = Nothing, fat = Nothing, carbon = Nothing}, date = Just 2014-04-15 11:30:15.7719941 “Œ‹ (•W€)}
+ Meal {name = Just "\143\198\130\232\139\202\131T\131\147\131h\131C\131b\131`", nutrient = Nutrient {calorie = Just 351.0, protein = Just 13.0, fat = Just 10.0, carbon = Just 30.0}, date = Just 2014-04-15 11:30:48.5812747 “Œ‹ (•W€)}
  
