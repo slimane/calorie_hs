@@ -1,3 +1,8 @@
 Meal {name = Just "\130\190\130\181\130\168\130\201\130\172\130\232 \131G\131r\130\190\130\181", nutrient = Nutrient {calorie = Just 189.0, protein = Just 5.3, fat = Just 1.8, carbon = Just 38.2}, date = Just 2014-04-15 12:32:04.6508832 東京 (標準時)}
-Meal {name = Just "\130\226\130\171\130\179\130\175", nutrient = Nutrient {calorie = Just 214.0, protein = Just 28.8, fat = Just 4.8, carbon = Just 1.4}, date = Just 2014-04-15 12:39:44.9629098 東京 (標準時)}Meal {name = Just "\130\169\130\194\130\199\130\241\130\168\130\201\130\172\130\232", nutrient = Nutrient {calorie = Just 332.0, protein = Just 7.5, fat = Just 5.4, carbon = Just 63.4}, date = Just 2014-04-15 18:16:17.8554226 東京 (標準時)}
+Meal {name = Just "\130\226\130\171\130\179\130\175", nutrient = Nutrient {calorie = Just 214.0, protein = Just 28.8, fat = Just 4.8, carbon = Just 1.4}, date = Just 2014-04-15 12:39:44.9629098 東京 (標準時)}
+Meal {name = Just "\130\169\130\194\130\199\130\241\130\168\130\201\130\172\130\232", nutrient = Nutrient {calorie = Just 332.0, protein = Just 7.5, fat = Just 5.4, carbon = Just 63.4}, date = Just 2014-04-15 18:16:17.8554226 東京 (標準時)}
+ WORKOUT "Just 1188.0"
+ "Meal {name = Just \"\\12414\\12378\\12365\\12354\\12387\\12385\\12419\\12514\\12490\\12459\\12450\\12452\\12473\", nutrient = Nutrient {calorie = Just 341.0, protein = Just 4.8, fat = Just 14.6, carbon = Just 47.5}, date = Just 2014-04-16 00:26:58.52637 JST}"
+
+"Meal {name = Just \"\\12420\\12373\\12356\\12377\\12540\\12407\", nutrient = Nutrient {calorie = Just 250.0, protein = Just 15.0, fat = Just 12.0, carbon = Just 0.5}, date = Just 2014-04-16 01:30:57.08217 JST}"
  
