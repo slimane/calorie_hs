@@ -32,7 +32,7 @@ main = do
     (cmd:_) <- getArgs
     let windows = "C:/HOME/learning_haskell/calorie/daily_data"
     let mac = "/Users/theatrical/learning_haskell/calorie_hs/daily_data"
-    file <- pure (\x -> mac ++ "/" ++ x ++ ".txt") <*> filename
+    file <- pure (\x -> windows ++ "/" ++ x ++ ".txt") <*> filename
     contents <- if cmd == "workout"
                     then W.insertWorkout >>= return . show
                     else M.insertMeal >>= return . show
