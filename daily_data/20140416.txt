@@ -4,4 +4,6 @@
  "Meal {name = Just \"teritama sandwich\", nutrient = Nutrient {calorie = Just 248.0, protein = Just 12.3, fat = Just 8.7, carbon = Just 29.8}, date = Just 2014-04-16 20:22:55.722779 JST}"
  "Meal {name = Just \"haagen-dazz green tea\", nutrient = Nutrient {calorie = Just 163.0, protein = Just 3.3, fat = Just 10.1, carbon = Just 14.7}, date = Just 2014-04-16 22:34:36.140968 JST}"
  "Meal {name = Just \"yasai soup\", nutrient = Nutrient {calorie = Just 300.0, protein = Just 15.0, fat = Just 12.0, carbon = Just 0.5}, date = Just 2014-04-16 22:57:23.643728 JST}"
+ Just 660.0
+ Meal {name = Just "protein", nutrient = Nutrient {calorie = Just 130.0, protein = Just 22.0, fat = Nothing, carbon = Nothing}, date = Just 2014-04-17 00:14:44.997367 JST}
  
