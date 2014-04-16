@@ -1,3 +1,7 @@
 "Meal {name = Just \"\\130\\169\\130\\194\\130\\199\\130\\241\\130\\168\\130\\201\\130\\172\\130\\232\", nutrient = Nutrient {calorie = Just 332.0, protein = Just 7.5, fat = Just 5.4, carbon = Just 63.4}, date = Just 2014-04-16 09:17:31.6319375 \147\140\139\158 (\149W\143\128\142\158)}"
  "Meal {name = Just \"\\130\\220\\130\\162\\130\\169\\150\\161\\149t\", nutrient = Nutrient {calorie = Just 128.0, protein = Just 19.2, fat = Just 2.0, carbon = Just 8.3}, date = Just 2014-04-16 12:16:24.472475 \147\140\139\158 (\149W\143\128\142\158)}"
+ "Meal {name = Just \"haagen dazs Crispy Sandwich\", nutrient = Nutrient {calorie = Just 267.0, protein = Just 3.0, fat = Just 19.1, carbon = Just 20.7}, date = Just 2014-04-16 20:21:59.720078 JST}"
+ "Meal {name = Just \"teritama sandwich\", nutrient = Nutrient {calorie = Just 248.0, protein = Just 12.3, fat = Just 8.7, carbon = Just 29.8}, date = Just 2014-04-16 20:22:55.722779 JST}"
+ "Meal {name = Just \"haagen-dazz green tea\", nutrient = Nutrient {calorie = Just 163.0, protein = Just 3.3, fat = Just 10.1, carbon = Just 14.7}, date = Just 2014-04-16 22:34:36.140968 JST}"
+ "Meal {name = Just \"yasai soup\", nutrient = Nutrient {calorie = Just 300.0, protein = Just 15.0, fat = Just 12.0, carbon = Just 0.5}, date = Just 2014-04-16 22:57:23.643728 JST}"
  
