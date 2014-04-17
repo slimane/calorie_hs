@@ -40,7 +40,7 @@ main = do
                         "workout" -> W.insertWorkout >>= return . ("--- Wokout\n- " ++) .  show
                         "add"     -> M.insertMeal >>= return . M.showMeal
                         _         -> return ""
-    when (contents /= "") $ appendFile file . (++ "\n ") $ contents
+    when (contents /= "") $ appendFile file . (++ "\n\n") $ contents
     appededContents <- fmap lines $ readFile file
     mapM_ (putStrLn . (++ "\n"). show) appededContents
     putStrLn $ "##### Total #####\n"
