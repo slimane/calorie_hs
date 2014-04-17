@@ -1,7 +1,7 @@
 module Workout(
               Workout(..)
               , lossCalorie
-							, insertWorkout
+              , insertWorkout
               , ) where
 
 import Data.Calorie
@@ -13,12 +13,10 @@ lossCalorie _ _ _  = Nothing
 
 insertWorkout :: IO Calorie
 insertWorkout = do
-	putStrLn "Workout Type"
-	wType <- fmap read getLine :: IO Workout
-	putStrLn "Weight (kg)"
-	kg <- fmap read getLine :: IO Double
-	putStrLn "Distance (km)"
-	distance <- fmap read getLine :: IO Double
-	return $ lossCalorie wType kg distance
-
-
+  putStrLn "Workout Type"
+  wType <- fmap read getLine :: IO Workout
+  putStrLn "Weight (kg)"
+  kg <- fmap read getLine :: IO Double
+  putStrLn "Distance (km)"
+  distance <- fmap read getLine :: IO Double
+  return $ lossCalorie wType kg distance

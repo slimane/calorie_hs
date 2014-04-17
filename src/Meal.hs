@@ -111,10 +111,13 @@ insertMeal = do
                     return $ Just n
 
 showMeal :: Meal -> String
-showMeal m = "#### " ++ name' ++ " ###" ++ "\n"
-              ++ "    NAME: " ++ name' ++ "\n"
-              ++ "    DATE: " ++ date' ++ "\n"
-              ++ "    NUTRIENT: " ++ nutrient'
+showMeal m = "--- Meal \n"
+              ++ "- NAME: " ++ "\n"
+              ++ "    " ++ name' ++ "\n"
+              ++ "- DATE: " ++ "\n"
+              ++ "    " ++ date' ++ "\n"
+              ++ "- NUTRIENT: " ++ "\n"
+              ++ "    " ++ nutrient'
         where
           show' cs = case cs of
                         Just c -> show c
