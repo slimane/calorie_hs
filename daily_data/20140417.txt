@@ -1,0 +1,66 @@
+--- "onigiri sekihan"
+- NAME:
+    "onigiri sekihan"
+- DATE:
+    2014-04-17 11:08:32.4322658 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 205.0, protein = Just 5.5, fat = Just 0.8, carbon = Just 43.9}
+--- "omusubi ohba"
+- NAME:
+    "omusubi ohba"
+- DATE:
+    2014-04-17 13:08:59.5768183 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 200.0, protein = Just 3.5, fat = Just 0.8, carbon = Just 44.8}
+--- "salada chicken"
+- NAME:
+    "salada chicken"
+- DATE:
+    2014-04-17 13:08:22.1841114 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 131.25, protein = Just 29.75, fat = Just 1.125, carbon = Just 0.375}
+--- "ookina onigiri"
+- NAME:
+    "ookina onigiri"
+- DATE:
+    2014-04-17 18:19:10.6646781 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 296.0, protein = Just 6.8, fat = Just 2.6, carbon = Just 61.4}
+--- Meal 
+- NAME: 
+    "kakinotane"
+- DATE: 
+    2014-04-17 19:49:03.410438 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 303.0, protein = Just 10.0, fat = Just 14.5, carbon = Just 33.2}
+ --- Meal 
+- NAME: 
+    "haagen-dazs"
+- DATE: 
+    2014-04-17 20:35:36.958273 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 168.0, protein = Just 2.4, fat = Just 10.7, carbon = Just 14.1}
+ --- Wokout
+- Just 924.0
+ --- Meal 
+- NAME: 
+    "miso soup"
+- DATE: 
+    2014-04-18 01:34:38.410557 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 300.0, protein = Just 10.0, fat = Just 9.0, carbon = Just 2.0}
+ --- Meal 
+- NAME: 
+    "haagen dazs vanila"
+- DATE: 
+    2014-04-18 02:14:12.336889 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 167.0, protein = Just 3.1, fat = Just 10.0, carbon = Just 16.1}
+ --- Meal 
+- NAME: 
+    "haagen dazs rum raisin"
+- DATE: 
+    2014-04-18 02:19:54.582775 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 168.0, protein = Just 3.0, fat = Just 10.0, carbon = Just 24.0}
+ 

@@ -7,6 +7,8 @@ import qualified Util.Translate as T
 import Data.Time
 import Control.Applicative
 import System.Environment
+import Control.Monad
+import Data.List
 
 
 filename :: IO String
@@ -29,14 +31,22 @@ zeroFill len n = if l >= len
 
 main :: IO ()
 main = do
-    (cmd:_) <- getArgs
+    x <- getArgs
+    let cmd  = if length x > 0 then head x else ""
     let windows = "C:/HOME/learning_haskell/calorie/daily_data"
     let mac = "/Users/theatrical/learning_haskell/calorie_hs/daily_data"
-    file <- pure (\x -> mac ++ "/" ++ x ++ ".txt") <*> filename
-    contents <- if cmd == "workout"
-                    then W.insertWorkout >>= return . show
-                    else M.insertMeal >>= return . show
-    appendFile file $ (++ "\n ") contents
+    file <- pure (\n -> mac ++ "/" ++ n ++ ".txt") <*> filename
+    contents <- case cmd of
+                        "workout" -> W.insertWorkout >>= return . ("--- Wokout\n- " ++) .  show
+                        "add"     -> M.insertMeal >>= return . M.showMeal
+                        _         -> return ""
+    when (contents /= "") $ appendFile file . (++ "\n ") $ contents
+    appededContents <- fmap lines $ readFile file
+    mapM_ (putStrLn . (++ "\n"). show) appededContents
+    putStrLn $ "##### Total #####\n"
+                    ++ (show
+                        . foldl1 M.nAdd
+                        . map (read :: String -> M.Nutrient)
+                        . filter (isInfixOf "Nutrient")
+                        $ appededContents)
     return ()
-
-

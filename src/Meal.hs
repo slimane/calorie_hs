@@ -7,6 +7,7 @@ module Meal (
             , insertNutrient
             , defaultNutrient
             , defaultMeal
+            , showMeal
             , calorieCal
             , nAdd
             , nMal
@@ -96,14 +97,33 @@ instance Ord T.ZonedTime where
 defaultMeal :: Meal
 defaultMeal = Meal{name = Nothing, nutrient = defaultNutrient, date = Nothing}
 
+japan = T.TimeZone 540 False "JAPAN"
 insertMeal :: IO Meal
 insertMeal = do
         n <- prompt "name" :: IO (Maybe String)
         nu <- insertNutrient
-        d <- T.getZonedTime
+        d <- fmap (T.utcToZonedTime japan) T.getCurrentTime
         return defaultMeal{name = n, nutrient = nu, date = Just d}
     where
         prompt s = do
                     putStrLn $ s ++ " is?"
                     n <- getLine
                     return $ Just n
+
+showMeal :: Meal -> String
+showMeal m = "--- Meal \n"
+              ++ "- NAME: " ++ "\n"
+              ++ "    " ++ name' ++ "\n"
+              ++ "- DATE: " ++ "\n"
+              ++ "    " ++ date' ++ "\n"
+              ++ "- NUTRIENT: " ++ "\n"
+              ++ "    " ++ nutrient'
+        where
+          show' cs = case cs of
+                        Just c -> show c
+                        _      -> ""
+          name' = show' . name $ m
+          nutrient' = show . nutrient $ m
+          date' = show' . date $ m
+
+
