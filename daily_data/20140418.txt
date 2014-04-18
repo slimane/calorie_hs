@@ -6,3 +6,19 @@
 - NUTRIENT: 
     Nutrient {calorie = Just 198.0, protein = Just 4.0, fat = Just 1.1, carbon = Just 43.1}
 
+--- Meal 
+- NAME: 
+    "ginshari_musubi ohba"
+- DATE: 
+    2014-04-18 12:01:48.9569174 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 200.0, protein = Just 3.5, fat = Just 0.8, carbon = Just 44.8}
+
+--- Meal 
+- NAME: 
+    "salada chiken"
+- DATE: 
+    2014-04-18 12:07:33.6893872 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 131.25, protein = Just 29.75, fat = Just 1.125, carbon = Just 0.375}
+

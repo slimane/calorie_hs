@@ -35,7 +35,7 @@ main = do
     let cmd  = if length x > 0 then head x else ""
     let windows = "C:/HOME/learning_haskell/calorie/daily_data"
     let mac = "/Users/theatrical/learning_haskell/calorie_hs/daily_data"
-    file <- pure (\n -> mac ++ "/" ++ n ++ ".txt") <*> filename
+    file <- pure (\n -> windows ++ "/" ++ n ++ ".txt") <*> filename
     contents <- case cmd of
                         "workout" -> W.insertWorkout >>= return . ("--- Wokout\n- " ++) .  show
                         "add"     -> M.insertMeal >>= return . M.showMeal
