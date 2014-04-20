@@ -1,0 +1,95 @@
+--- Meal
+- NAME:
+    "kellog fruit granora"
+- DATE:
+    2014-04-19 05:07:09.944508 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 344.0, protein = Just 4.4, fat = Just 9.8, carbon = Just 58.36}
+--- Meal
+- NAME:
+    "haagen datz"
+- DATE:
+    2014-04-19 06:12:07.541692 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 167.0, protein = Just 3.1, fat = Just 11.1, carbon = Just 13.6}
+
+--- Meal
+- NAME:
+    "granora"
+- DATE:
+    2014-04-19 07:29:05.575159 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 1358.0, protein = Just 9.0, fat = Just 39.2, carbon = Just 113.02}
+
+--- Meal
+- NAME:
+    "potato chips"
+- DATE:
+    2014-04-19 13:28:46.542073 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 332.0, protein = Just 2.6, fat = Just 20.4, carbon = Just 34.6}
+
+--- Meal
+- NAME:
+    "naporitan"
+- DATE:
+    2014-04-19 13:37:03.081357 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 600.0, protein = Just 16.8, fat = Just 24.2, carbon = Just 78.3}
+
+--- Meal 
+- NAME: 
+    "sugar corn"
+- DATE: 
+    2014-04-19 13:41:49.49825 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 134.0, protein = Just 1.8, fat = Just 3.3, carbon = Just 13.9}
+
+--- Meal 
+- NAME: 
+    "sugar corn"
+- DATE: 
+    2014-04-19 13:56:07.477946 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 268.0, protein = Just 3.6, fat = Just 6.9, carbon = Just 27.8}
+
+--- Meal 
+- NAME: 
+    "sugar corn"
+- DATE: 
+    2014-04-19 14:06:22.981658 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 268.0, protein = Just 3.6, fat = Just 6.9, carbon = Just 27.8}
+
+--- Meal 
+- NAME: 
+    "granora"
+- DATE: 
+    2014-04-19 15:19:46.113359 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 580.5, protein = Just 7.425, fat = Just 16.5375, carbon = Just 98.2125}
+
+--- Meal 
+- NAME: 
+    "potato chips"
+- DATE: 
+    2014-04-20 01:17:10.134374 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 405.0, protein = Just 3.7, fat = Just 25.5, carbon = Just 40.2}
+
+--- Meal 
+- NAME: 
+    "Choco cake"
+- DATE: 
+    2014-04-20 01:18:03.48729 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 307.0, protein = Nothing, fat = Nothing, carbon = Nothing}
+
+--- Meal 
+- NAME: 
+    "negitoro"
+- DATE: 
+    2014-04-20 01:18:53.033371 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 207.0, protein = Just 6.5, fat = Just 4.1, carbon = Just 36.2}
+

@@ -1,0 +1,28 @@
+--- Meal
+- NAME:
+    "domino pizza"
+- DATE:
+    2014-04-20 16:45:09.056697 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 1400.0, protein = Nothing, fat = Nothing, carbon = Nothing}
+
+--- Meal
+- NAME:
+    "choco daifuku"
+- DATE:
+    2014-04-20 20:22:15.085155 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 139.0, protein = Just 1.6, fat = Just 6.0, carbon = Just 19.6}
+
+--- Meal
+- NAME:
+    "kidkad maccha"
+- DATE:
+    2014-04-20 20:23:47.159776 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 756.0, protein = Just 5.76, fat = Just 44.4, carbon = Just 84.0}
+
+--- Wokout
+- Just 924.0
+
+

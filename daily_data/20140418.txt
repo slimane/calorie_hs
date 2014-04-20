@@ -1,24 +1,41 @@
---- Meal 
-- NAME: 
+--- Meal
+- NAME:
     "onigiri katsuo"
-- DATE: 
+- DATE:
     2014-04-18 09:19:45.5043693 JAPAN
-- NUTRIENT: 
+- NUTRIENT:
     Nutrient {calorie = Just 198.0, protein = Just 4.0, fat = Just 1.1, carbon = Just 43.1}
 
---- Meal 
-- NAME: 
+--- Meal
+- NAME:
     "ginshari_musubi ohba"
-- DATE: 
+- DATE:
     2014-04-18 12:01:48.9569174 JAPAN
-- NUTRIENT: 
+- NUTRIENT:
     Nutrient {calorie = Just 200.0, protein = Just 3.5, fat = Just 0.8, carbon = Just 44.8}
 
---- Meal 
-- NAME: 
+--- Meal
+- NAME:
     "salada chiken"
-- DATE: 
+- DATE:
     2014-04-18 12:07:33.6893872 JAPAN
-- NUTRIENT: 
+- NUTRIENT:
     Nutrient {calorie = Just 131.25, protein = Just 29.75, fat = Just 1.125, carbon = Just 0.375}
+
+--- Meal
+- NAME:
+    "kellog fruit garanora"
+- DATE:
+    2014-04-18 19:36:22.840599 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 172.0, protein = Just 2.2, fat = Just 4.9, carbon = Just 29.1}
+
+--- Meal
+- NAME:
+    "haagen dazs greentea"
+- DATE:
+    2014-04-18 19:40:48.416057 JAPAN
+- NUTRIENT:
+    Nutrient {calorie = Just 163.0, protein = Just 3.3, fat = Just 10.1, carbon = Just 14.7}
+
 
