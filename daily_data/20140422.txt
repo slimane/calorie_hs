@@ -1,0 +1,8 @@
+--- Meal 
+- NAME: 
+    "oats meal"
+- DATE: 
+    2014-04-22 06:48:25.193081 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 347.0, protein = Just 35.0, fat = Just 15.0, carbon = Just 28.0}
+
