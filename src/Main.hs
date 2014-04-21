@@ -35,7 +35,7 @@ main = do
     let mac = "/Users/theatrical/learning_haskell/calorie_hs/daily_data"
     x <- getArgs
     file <- if length x > 1 && head x == "-file" then return $ head . tail $ x
-                                 else pure (\n -> mac ++ "/" ++ n ++ ".txt") <*> filename
+                                 else pure (\n -> windows ++ "/" ++ n ++ ".txt") <*> filename
     putStrLn file
     let cmd  = if length x > 0 && head x /= "-file"
                    then head $ x

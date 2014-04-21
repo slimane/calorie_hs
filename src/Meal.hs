@@ -23,16 +23,16 @@ import Control.Exception as E
 import qualified Data.Time as T
 
 type NutrientQuantity = BaseUnit
-data Nutrient = Nutrient{calorie :: Calorie
-                        , protein :: NutrientQuantity
-                        , fat :: NutrientQuantity
-                        , carbon :: NutrientQuantity}
+data Nutrient = Nutrient{calorie :: Maybe Calorie
+                        , protein :: Maybe NutrientQuantity
+                        , fat :: Maybe NutrientQuantity
+                        , carbon :: Maybe NutrientQuantity}
                       deriving(Show, Eq, Read, Ord)
 
 nAdd :: Nutrient -> Nutrient -> Nutrient
 a `nAdd` b = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
     where
-        nAdd' :: BaseUnit -> BaseUnit -> BaseUnit
+        nAdd' :: Maybe BaseUnit -> Maybe BaseUnit -> Maybe BaseUnit
         m1 `nAdd'` m2 = (+) <$> m1 <*> m2
         cal = calorie a `nAdd'` calorie b
         p = protein a `nAdd'` protein b
@@ -52,14 +52,14 @@ n `nMal` a = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
 nDiv :: Nutrient -> Double -> Nutrient
 n `nDiv` a = n `nMal` (1 / a)
 
-cMinus :: Nutrient -> Calorie -> Calorie
+cMinus :: Maybe Nutrient -> Maybe Calorie -> Maybe Calorie
 cMinus nu c = calorie nu `nMinus'` c
     where
       m1 `nMinus'` m2  =  (-) <$> m1 <*> m2
 
 
 data NurietKind = Protein | Carbon | Fat deriving Eq
-calorieCal :: NurietKind -> NutrientQuantity -> Calorie
+calorieCal :: NurietKind -> Maybe NutrientQuantity -> Maybe Calorie
 calorieCal Protein = fmap (4*)
 calorieCal Carbon  = fmap (4*)
 calorieCal Fat     = fmap (9*)

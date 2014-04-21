@@ -1,20 +1,21 @@
 module Workout(
-              Workout(..)
+              WorkoutKind(..)
               , lossCalorie
               , insertWorkout
               , ) where
 
 import Data.Calorie
 
-data Workout = Run | Swim | Bike | Walk deriving (Eq, Read)
-lossCalorie :: Workout -> Double -> Double -> Calorie
+data Workout = Workout{kind :: WorkoutKind, distance :: Double}
+data WorkoutKind = Run | Swim | Bike | Walk deriving (Eq, Read)
+lossCalorie :: WorkoutKind -> Double -> Double -> Maybe Calorie
 lossCalorie Run weight km = Just $ weight * km
 lossCalorie _ _ _  = Nothing
 
-insertWorkout :: IO Calorie
+insertWorkout :: IO (Maybe Calorie)
 insertWorkout = do
   putStrLn "Workout Type"
-  wType <- fmap read getLine :: IO Workout
+  wType <- fmap read getLine :: IO WorkoutKind
   putStrLn "Weight (kg)"
   kg <- fmap read getLine :: IO Double
   putStrLn "Distance (km)"
