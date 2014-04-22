@@ -6,3 +6,11 @@
 - NUTRIENT: 
     Nutrient {calorie = Just 347.0, protein = Just 35.0, fat = Just 15.0, carbon = Just 28.0}
 
+--- Meal 
+- NAME: 
+    "ookina-onigiri"
+- DATE: 
+    2014-04-22 12:33:30.3447541 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 296.0, protein = Just 6.8, fat = Just 2.6, carbon = Just 61.4}
+
