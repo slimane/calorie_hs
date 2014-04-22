@@ -14,3 +14,30 @@
 - NUTRIENT: 
     Nutrient {calorie = Just 296.0, protein = Just 6.8, fat = Just 2.6, carbon = Just 61.4}
 
+--- Meal 
+- NAME: 
+    "onigiri"
+- DATE: 
+    2014-04-23 00:28:11.320429 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 200.0, protein = Just 3.5, fat = Just 0.8, carbon = Just 44.8}
+
+--- Meal 
+- NAME: 
+    "pocky * 4"
+- DATE: 
+    2014-04-23 00:28:47.668247 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 284.0, protein = Just 4.8, fat = Just 13.2, carbon = Just 36.3}
+
+--- Wokout
+- Just 914.1999999999999
+
+--- Meal 
+- NAME: 
+    "protein"
+- DATE: 
+    2014-04-23 00:54:58.648302 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 260.0, protein = Just 44.0, fat = Just 4.0, carbon = Just 10.0}
+
