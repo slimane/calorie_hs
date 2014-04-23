@@ -22,3 +22,43 @@
 - NUTRIENT: 
     Nutrient {calorie = Just 202.0, protein = Just 5.0, fat = Just 1.7, carbon = Just 41.7}
 
+--- Meal 
+- NAME: 
+    "pocky"
+- DATE: 
+    2014-04-23 19:09:36.242887 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 213.0, protein = Just 3.599, fat = Just 9.9, carbon = Just 27.6}
+
+--- Meal 
+- NAME: 
+    "gokuuma tunamayo"
+- DATE: 
+    2014-04-23 23:48:18.441033 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 306.0, protein = Just 7.1, fat = Just 5.4, carbon = Just 55.0}
+
+--- Meal 
+- NAME: 
+    "natto maki"
+- DATE: 
+    2014-04-23 23:48:40.894639 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 185.0, protein = Just 6.1, fat = Just 2.2, carbon = Just 35.2}
+
+--- Meal 
+- NAME: 
+    "protein"
+- DATE: 
+    2014-04-23 23:48:56.557539 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 130.0, protein = Just 22.0, fat = Nothing, carbon = Nothing}
+
+--- Meal 
+- NAME: 
+    "yasai soup"
+- DATE: 
+    2014-04-24 01:44:34.601451 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 100.0, protein = Just 0.0, fat = Just 0.0, carbon = Just 0.0}
+
