@@ -39,10 +39,9 @@ a `nAdd` b = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
         f = fat a `nAdd'` fat b
         c = carbon a `nAdd'` carbon b
 
-nMal :: Nutrient -> Double -> Nutrient
+nMal :: Nutrient -> Maybe Double -> Nutrient
 n `nMal` a = Nutrient{calorie  = cal, protein = p, fat = f, carbon = c}
     where
-        nMal' :: BaseUnit -> Double -> BaseUnit
         n' `nMal'` a' = fmap (a' *) n'
         cal = calorie n `nMal'` a
         p = protein n `nMal'` a

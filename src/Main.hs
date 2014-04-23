@@ -54,4 +54,9 @@ main = do
                         . map (read :: String -> M.Nutrient)
                         . filter (isInfixOf "Nutrient")
                         $ appededContents)
+                    ++ (show
+                        . foldl1 (\x y -> pure (+) <*> x <*> y)
+                        . map (read :: Calorie)
+                        . filter (isPrefixOf "- Just")
+                        $ appededContents)
     return ()

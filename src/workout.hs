@@ -8,11 +8,11 @@ import Data.Calorie
 
 data Workout = Workout{kind :: WorkoutKind, distance :: Double}
 data WorkoutKind = Run | Swim | Bike | Walk deriving (Eq, Read)
-lossCalorie :: WorkoutKind -> Double -> Double -> Maybe Calorie
+lossCalorie :: WorkoutKind -> Double -> Double -> Calorie
 lossCalorie Run weight km = Just $ weight * km
 lossCalorie _ _ _  = Nothing
 
-insertWorkout :: IO (Maybe Calorie)
+insertWorkout :: IO Calorie
 insertWorkout = do
   putStrLn "Workout Type"
   wType <- fmap read getLine :: IO WorkoutKind
