@@ -1,0 +1,24 @@
+--- Meal 
+- NAME: 
+    "ume-oroshi soba"
+- DATE: 
+    2014-04-24 12:30:58.7889185 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 344.0, protein = Just 21.0, fat = Just 2.2, carbon = Just 60.0}
+
+--- Meal 
+- NAME: 
+    "ume-to-katsuo-no kaori-gohan"
+- DATE: 
+    2014-04-24 17:33:00.2686647 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 179.0, protein = Just 3.2, fat = Just 1.0, carbon = Just 39.2}
+
+--- Meal 
+- NAME: 
+    "ankoya dogenji(sakura-mochi)"
+- DATE: 
+    2014-04-24 17:34:51.5256647 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 158.0, protein = Just 3.2, fat = Just 0.2, carbon = Just 35.9}
+
