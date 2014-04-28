@@ -5,3 +5,19 @@
     2014-04-25 04:44:42.911576 JAPAN
 - NUTRIENT:
     Nutrient {calorie = Just 337.0, protein = Just 30.3, fat = Just 7.25, carbon = Just 28.88}
+--- Meal 
+- NAME: 
+    "ohkina-onigiri"
+- DATE: 
+    2014-04-25 12:10:13.3169163 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 296.0, protein = Just 6.8, fat = Just 2.6, carbon = Just 61.4}
+
+--- Meal 
+- NAME: 
+    "katudon onigiri"
+- DATE: 
+    2014-04-25 17:31:21.2449788 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 332.0, protein = Just 7.5, fat = Just 5.4, carbon = Just 63.4}
+

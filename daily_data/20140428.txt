@@ -1,0 +1,32 @@
+--- Meal 
+- NAME: 
+    "haru-no eho-maki"
+- DATE: 
+    2014-04-28 09:01:45.5897989 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 301.0, protein = Just 9.2, fat = Just 4.0, carbon = Just 56.9}
+
+--- Meal 
+- NAME: 
+    "onigiri ohba"
+- DATE: 
+    2014-04-28 12:27:01.2707019 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 200.0, protein = Just 3.5, fat = Just 0.8, carbon = Just 44.8}
+
+--- Meal 
+- NAME: 
+    "salada chicken"
+- DATE: 
+    2014-04-28 12:28:52.1654697 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 131.25, protein = Just 29.75, fat = Just 1.125, carbon = Just 0.375}
+
+--- Meal 
+- NAME: 
+    "chocolate effect cacao 86%"
+- DATE: 
+    2014-04-28 16:27:48.8360614 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 243.0, protein = Just 5.8, fat = Just 19.1, carbon = Just 8.8}
+
