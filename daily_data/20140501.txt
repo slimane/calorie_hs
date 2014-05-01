@@ -1,0 +1,24 @@
+--- Meal 
+- NAME: 
+    "salada chicken"
+- DATE: 
+    2014-05-01 12:22:43.7759757 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 131.25, protein = Just 29.75, fat = Just 1.125, carbon = Just 0.375}
+
+--- Meal 
+- NAME: 
+    "ikura onigiri"
+- DATE: 
+    2014-05-01 12:23:26.1179757 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 187.0, protein = Just 5.4, fat = Just 1.0, carbon = Just 39.1}
+
+--- Meal 
+- NAME: 
+    "hanjuku-nitamago onigiri"
+- DATE: 
+    2014-05-01 12:23:56.4039757 JAPAN
+- NUTRIENT: 
+    Nutrient {calorie = Just 295.0, protein = Just 9.9, fat = Just 6.3, carbon = Just 49.6}
+
